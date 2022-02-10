@@ -18,20 +18,21 @@ body{
 }
 
 main{
+    margin-top: 20px;
     width: 900px;
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .instagram-phone{
-    border: 1px solid black;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 16px;
+    min-height: 90vh;
 }
 
 .instagram-phone img{
@@ -44,7 +45,8 @@ main{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border: 1px solid black;
+    margin-left: 16px;
+    min-height: 90vh;
 }
 
 .group{
@@ -56,8 +58,10 @@ main{
 .group:nth-child(1){
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    min-height: 25rem;
 }
 
 .group:nth-child(2){
@@ -66,7 +70,19 @@ main{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
+    min-height: 5rem;
 }
+
+.group:nth-child(3){
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    min-height: 5rem;
+}
+
 
 .blue-link{
     color: #1095F6;
@@ -74,9 +90,7 @@ main{
 }
 
 .instagram-logo{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
+    width: 50%;
 }
 
 .instagram-logo img{
@@ -85,8 +99,6 @@ main{
 
 .instagram-profile{
     width: 100px;
-    margin: auto;
-    margin-bottom: 20px;
 }
 
 .instagram-profile img{
@@ -100,4 +112,66 @@ main{
     color: #FFFFFF;
     display: block;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+.app{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+
+}
+
+.app-img{
+    width: 40%;
+}
+
+.app-img img{
+    width: 100%;
+}
+
+/* Media Queries*/
+
+@media(max-width: 950px ){
+    main{
+        width: 100%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        align-items: center;
+        width: 450px;
+    }
+}
+
+@media(max-width: 500px ){
+
+    body{
+        background-color: #FFFFFF;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        align-items: center;
+        width: 100%;
+    }
+
+    .group{
+        border: none;
+    }
+
+    .buttom{
+        font-size: 12px;
+    }
 }
